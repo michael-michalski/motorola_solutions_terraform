@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"monitoring","Source":"./monitoring","Dir":"monitoring"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"ingress","Source":"./ingress","Dir":"ingress"},{"Key":"ingress-nginx-controller","Source":"zioproto/ingress-nginx-controller/kubernetes","Version":"0.0.1","Dir":".terraform/modules/ingress-nginx-controller/zioproto-terraform-kubernetes-ingress-nginx-controller-c6e4a73"}]}
