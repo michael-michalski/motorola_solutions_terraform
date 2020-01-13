@@ -46,11 +46,10 @@ resource "kubernetes_deployment" "grafana" {
               name = "GF_SERVER_ROOT_URL"
               value = "/grafana/"
           }
-
-          env {
-              name = "GF_SERVER_SERVE_FROM_SUB_PATH"
-              value = "true"
-          }
+        #   env {
+        #         name = "GF_SERVER_DOMAIN"
+        #         value = "localhost"
+        #   }
 
           resources {
             limits {

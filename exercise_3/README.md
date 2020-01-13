@@ -1,4 +1,4 @@
-# Lets do something a little cooler
+# Exercise 3: Lets do something a little cooler
 
 Let us create a cluster with ingress
 
@@ -28,14 +28,20 @@ nodes:
 EOF
 ```
 
-Apply kind specific patches.
-> kubectl patch deployments -n ingress-nginx -controller -p '{"spec":{"template":{"spec":{"containers":[{"name":"-controller","ports":[{"containerPort":80,"hostPort":80},{"containerPort":443,"hostPort":443}]}],"nodeSelector":{"ingress-ready":"true"},"tolerations":[{"key":"node-role.kubernetes.io/master","operator":"Equal","effect":"NoSchedule"}]}}}}'
-
 > terraform init
 
 > terraform apply
 
-Look at what we deployed. Let us try to make it usable one step at a time.
+Have a look at what we deployed, keep in mind that some of the resources are hidden behind a namespace "ingress-nginx".
+
+## Extend the ingress
+You can do either task.
+
+ * Find a web service of your liking, and add terraform resources so that you can access it.
+
+
+ * Find / write a service that sends statsd metrics to graphitestatsd on port 8125, and deploy it with terraform.
+
 
 Delete everything again
 > terraform destroy

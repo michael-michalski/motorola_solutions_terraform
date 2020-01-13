@@ -5,7 +5,7 @@ resource "kubernetes_service" "graphitestatsd" {
   spec {
     selector = {
       app = "graphitestatsd"
-    }
+    }   
     port {
       port        = 8081
       name        = "graphite"
@@ -28,7 +28,7 @@ resource "kubernetes_deployment" "graphitestatsd" {
 
   spec {
     replicas = 1
-
+    
     selector {
       match_labels = {
         app = "graphitestatsd"
