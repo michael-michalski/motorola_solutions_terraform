@@ -1,5 +1,5 @@
 provider "kubernetes" {
-  config_context_cluster   = "kind-moto_uni"
+  config_context_cluster   = "kind-moto-uni"
 }
 
 module "monitoring" {

@@ -2,7 +2,7 @@
 
 Create a Kubernetes Cluster
 
-> kind create cluster --name moto_uni
+> kind create cluster --name moto-uni
 
 Add the folowing to main.tf and grafana.tf
 
